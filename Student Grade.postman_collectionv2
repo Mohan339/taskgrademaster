@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "f1992ccd-6c1f-4875-8a5a-de0a9b5a7aff",
+		"name": "Student Grade",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15942526"
+	},
+	"item": [
+		{
+			"name": "grade list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/api/grade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/api/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grade detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/api/grade/639179ed0c908bd78df77f93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"grade",
+						"639179ed0c908bd78df77f93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grade detail update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gradeName\":\"A+\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/api/grade/639179ed0c908bd78df77f93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"grade",
+						"639179ed0c908bd78df77f93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grade delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/api/grade/6391aaa612bff157ebf0ce1e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"grade",
+						"6391aaa612bff157ebf0ce1e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/api/student/639193ee483c782836956e27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"student",
+						"639193ee483c782836956e27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student detail update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/api/student/63903d872df2658a4f13830b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"student",
+						"63903d872df2658a4f13830b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/api/student/63917d088a97924f40820939",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"student",
+						"63917d088a97924f40820939"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grade creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gradeName\":\"E Grade\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/api/grade/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"grade",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"name\":\"Sam\",\r\n    \"class\":\"12\",\r\n\"age\":12,\r\n\"gender\":\"male\",\r\n\"gradeId\":\"639179ed0c908bd78df77f93\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/api/student/add/639179ed0c908bd78df77f93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"api",
+						"student",
+						"add",
+						"639179ed0c908bd78df77f93"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
